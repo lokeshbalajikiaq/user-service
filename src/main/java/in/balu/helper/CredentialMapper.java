@@ -14,7 +14,7 @@ public interface CredentialMapper {
 
     CredentialDto toCredentialDto(Credential credential);
 
-    @Mapping(target = "user", ignore = true)
+//    @Mapping(target = "user", ignore = true)
     Credential toCredentialEntity(CredentialDto credentialDto);
 
     // 3. BIDIRECTIONAL LINK FIXER
