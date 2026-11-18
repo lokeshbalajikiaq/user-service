@@ -18,7 +18,7 @@ public class CredentialController {
     @ResponseStatus(code = HttpStatus.OK)
     public CredentialDto findByUsername(@PathVariable("uname") String username) {
 
-        log.info("CredentialController findByUsername");
+        log.info("CredentialController findByUsername : {}", username);
 
         return credentialService.findByUsername(username);
 
